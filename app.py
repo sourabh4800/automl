@@ -8,7 +8,7 @@ from streamlit_pandas_profiling import st_profile_report
 from pycaret.regression import setup as setup_reg, compare_models as compare_models_reg, pull as pull_reg, save_model as save_model_reg, create_model as create_model_reg
 from pycaret.classification import setup as setup_cls, compare_models as compare_models_cls, pull as pull_cls, save_model as save_model_cls, create_model as create_model_cls
 with st.sidebar:
-    st.image('/home/cse/Projects/autoML/images/automl.png')
+    st.image('automl.png')
     st.title("AutoStreamML")
     choice = st.radio("Navigation", ["Upload", "Profiling", "ML", "Download"])
     st.info("This application allows you to build an automated ML pipeline using Streamlit, dtale and PyCaret")
